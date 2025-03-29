@@ -64,8 +64,8 @@ def compute_similarity(query_embedding, doc_embedding):
 
 # Load a pretrained neural reranker
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model_name = "dslim/bert-base-NER" # 0.5241
 model_name = 'sentence-transformers/all-mpnet-base-v2' # 0.6447
+model_name = "dslim/bert-base-NER" # 0.5241
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModel.from_pretrained(model_name).to(device)
