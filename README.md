@@ -106,7 +106,7 @@ We can see from these query results that Query 1 shows a clear standout top resu
 # Mean Average Precision
 
 Using this trec eval command: 
-./trec_eval -m map -m P.10 ../../Assignment2/scifact/qrels/test.tsv ../../Assignment2/reranked_results.tsv
+`./trec_eval -m map -m P.10 ../../Assignment2/scifact/qrels/test.tsv ../../Assignment2/reranked_results.tsv`
 
 We find these results with the following models: 
 
